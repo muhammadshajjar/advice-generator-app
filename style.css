@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300;800&display=swap");
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/*Class to hide visual impact this is for only screen readers*/
+
+.sr-only {
+  border: 0 !important;
+  clip: rect(1px, 1px, 1px, 1px) !important;
+  -webkit-clip-path: inset(50%) !important;
+  clip-path: inset(50%) !important;
+  height: 1px !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  position: absolute !important;
+  width: 1px !important;
+  white-space: nowrap !important;
+}
+
+:root {
+  /* Primary */
+  --Light-Cyan: hsl(193, 38%, 86%);
+  --Neon-Green: hsl(150, 100%, 66%);
+
+  /* Neutral */
+  --Grayish-Blue: hsl(217, 19%, 38%);
+  --Dark-Grayish-Blue: hsl(217, 19%, 24%);
+  --Dark-Blue: hsl(218, 23%, 16%);
+  /* font */
+  --ff-familty: "Manrope", sans-serif;
+}
+
+body,
+p,
+h1 {
+  margin: 0;
+  padding: 0;
+}
+img {
+  width: 100%;
+}
+
+body {
+  font-family: var(--ff-familty);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--Dark-Blue);
+}
+
+.container {
+  width: 90%;
+  max-width: 540px;
+  background-color: var(--Grayish-Blue);
+  background-color: var(--Dark-Grayish-Blue);
+  padding: 52px 45px 0 45px;
+  text-align: center;
+  border-radius: 17px;
+}
+
+.advice-no {
+  color: var(--Neon-Green);
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: bold;
+  font-size: 12px;
+}
+.content h2 {
+  color: var(--Light-Cyan);
+}
+.advice-desc {
+  font-size: 28px;
+  font-weight: 800;
+  margin-top: 29px;
+  margin-bottom: 41px;
+}
+
+.btn {
+  height: 64px;
+  width: 64px;
+  border-radius: 50%;
+  background-color: var(--Neon-Green);
+  border: none;
+  transform: translateY(50%);
+  cursor: pointer;
+  transition: box-shadow 0.4s ease-in-out;
+}
+
+.btn:hover {
+  box-shadow: 0 0 2rem var(--Neon-Green);
+  transition: hover;
+}
+.blur {
+  filter: blur(7px);
+  opacity: 0.7;
+}
+
+.error {
+  font-size: calc(0.75em + 8.5vw);
+  color: var(--Neon-Green);
+  font-weight: 800;
+}
+
+footer {
+  position: absolute;
+  bottom: 30px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: var(--Light-Cyan);
+}
+.attribution a {
+  color: var(--Neon-Green);
+}
